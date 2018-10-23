@@ -22,5 +22,6 @@ Route::get('/contact', function () {
 });
 Route::post('/contact', function () {
     $data = request() ->all();
-    dd($data);
+    echo "Email: " . $data['email']. '<br>';
+    echo "Message: " . $data['body'];
 });
