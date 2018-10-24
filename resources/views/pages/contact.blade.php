@@ -7,6 +7,7 @@
         </div>
         <div class="card-body">
             <form role ="form" id="contact-form" class="contact-form" method="POST" action="{{route('contact.store')}}">
+                {{csrf_field()}}
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input name="name" type="name" class="form-control" id="name" placeholder=" ">
