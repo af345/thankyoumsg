@@ -23,3 +23,6 @@ Route::get('/thanks/{name}', 'PagesController@thanks')->name('thanks');
     echo "Email: " . $data['email']. '<br>';
     echo "Message: " . $data['body'];
 });*/
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
