@@ -2,11 +2,6 @@
 
 @section('content')
 
-
-
-
-        <h1>This is my thank you Page</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-
+        <h1>Thank You {{$name}} !</h1>
 
 @endsection
